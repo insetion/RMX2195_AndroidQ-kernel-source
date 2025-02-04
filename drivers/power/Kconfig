@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifdef VENDOR_EDIT
 #/* Yichun.Chen  PSW.BSP.CHG  2019- */
 config OPPO_SM4250Q_CHARGER
@@ -69,3 +70,9 @@ source "drivers/power/oppo/Kconfig"
 source "drivers/power/avs/Kconfig"
 source "drivers/power/reset/Kconfig"
 source "drivers/power/supply/Kconfig"
+||||||| empty tree
+=======
+source "drivers/power/avs/Kconfig"
+source "drivers/power/reset/Kconfig"
+source "drivers/power/supply/Kconfig"
+>>>>>>> 495862f6f1ebcb4aee0689418bab99001c878d22

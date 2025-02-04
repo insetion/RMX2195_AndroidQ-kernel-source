@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ccflags-y += -I$(src)			# needed for trace events
 
 obj-y					+= ion/
@@ -9,3 +10,12 @@ obj-$(CONFIG_ANDROID_VSOC)		+= vsoc.o
 obj-$(CONFIG_OPPO_HANS) += hans.o
 obj-$(CONFIG_OPPO_HANS) += hans_netfilter.o
 #endif
+||||||| empty tree
+=======
+ccflags-y += -I$(src)			# needed for trace events
+
+obj-y					+= ion/
+
+obj-$(CONFIG_ASHMEM)			+= ashmem.o
+obj-$(CONFIG_ANDROID_VSOC)		+= vsoc.o
+>>>>>>> 495862f6f1ebcb4aee0689418bab99001c878d22

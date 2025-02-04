@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SPDX-License-Identifier: GPL-2.0-only
 config CRYPTO_DEV_QCOM_ICE
 	tristate "Inline Crypto Module"
@@ -8,3 +9,17 @@ config CRYPTO_DEV_QCOM_ICE
 	  and later, to accelerate crypto operations for storage needs.
 	  To compile this driver as a module, choose M here: the
 	  module will be called ice.
+||||||| empty tree
+=======
+# SPDX-License-Identifier: GPL-2.0-only
+config CRYPTO_DEV_QCOM_ICE
+	tristate "Inline Crypto Module"
+	default n
+	depends on BLK_DEV_DM
+	depends on PFK
+	help
+	  This driver supports Inline Crypto Engine for QTI chipsets, MSM8994
+	  and later, to accelerate crypto operations for storage needs.
+	  To compile this driver as a module, choose M here: the
+	  module will be called ice.
+>>>>>>> 495862f6f1ebcb4aee0689418bab99001c878d22

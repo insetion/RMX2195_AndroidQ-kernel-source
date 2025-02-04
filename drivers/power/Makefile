@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 obj-$(CONFIG_POWER_AVS)		+= avs/
 obj-$(CONFIG_POWER_RESET)	+= reset/
 obj-$(CONFIG_POWER_SUPPLY)	+= supply/
@@ -6,3 +7,9 @@ obj-$(CONFIG_POWER_SUPPLY)	+= supply/
 #/* Zhangchangan  PSW.BSP.CHG  2019-10-30 */
 obj-$(CONFIG_OPPO_SM4250Q_CHARGER)	+= oppo/
 #endif
+||||||| empty tree
+=======
+obj-$(CONFIG_POWER_AVS)		+= avs/
+obj-$(CONFIG_POWER_RESET)	+= reset/
+obj-$(CONFIG_POWER_SUPPLY)	+= supply/
+>>>>>>> 495862f6f1ebcb4aee0689418bab99001c878d22

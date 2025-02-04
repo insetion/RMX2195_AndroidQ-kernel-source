@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SPDX-License-Identifier: GPL-2.0
 ccflags-y += -Isecurity/selinux -Isecurity/selinux/include
 ccflags-y += -Ifs/crypto
@@ -5,3 +6,14 @@ ccflags-y += -Idrivers/misc
 
 obj-$(CONFIG_PFT) += pft.o
 obj-$(CONFIG_PFK) += pfk.o pfk_kc.o pfk_ice.o pfk_ext4.o pfk_f2fs.o
+||||||| empty tree
+=======
+# SPDX-License-Identifier: GPL-2.0
+ccflags-y += -Isecurity/selinux -Isecurity/selinux/include
+ccflags-y += -Ifs/crypto
+ccflags-y += -Idrivers/misc
+ccflags-y += -Idrivers/soc/qcom
+
+obj-$(CONFIG_PFT) += pft.o
+obj-$(CONFIG_PFK) += pfk.o pfk_kc.o pfk_ice.o pfk_ext4.o pfk_f2fs.o
+>>>>>>> 495862f6f1ebcb4aee0689418bab99001c878d22
