@@ -44,7 +44,7 @@
 #define FP_NOTIFY_ON                            FB_BLANK_UNBLANK
 #define FP_NOTIFY_OFF                           FB_BLANK_POWERDOWN
 #define FP_NOTIFY_EVENT_BLANK                   FB_EVENT_BLANK
-#define fpsensor_fb_register_client(client)     fb_register_client(client);
+//#define fpsensor_fb_register_client(client)     fb_register_client(client);
 #define fpsensor_fb_unregister_client(client)   fb_unregister_client(client)
 #endif
 #endif
@@ -390,9 +390,9 @@ static long fpsensor_ioctl(struct file *filp, unsigned int cmd, unsigned long ar
         fpsensor_dev->device_available = 0;
         fpsensor_gpio_free(fpsensor_dev);
         fpsensor_dev_cleanup(fpsensor_dev);
-#if FP_NOTIFY
-        fpsensor_fb_unregister_client(&fpsensor_dev->notifier);
-#endif
+//#if FP_NOTIFY
+       // fpsensor_fb_unregister_client(&fpsensor_dev->notifier);
+//#endif
         fpsensor_dev->free_flag = 1;
         fpsensor_debug(INFO_LOG, "%s remove finished\n", __func__);
         break;
@@ -685,10 +685,10 @@ static int fpsensor_probe(struct platform_device *pdev)
     wake_lock_init(&g_ttw_wl, WAKE_LOCK_SUSPEND, "fpsensor_ttw_wl");
 #endif
     fpsensor_dev->device_available = 1;
-#if FP_NOTIFY
+//#if FP_NOTIFY
     fpsensor_dev->notifier.notifier_call = fpsensor_fb_notifier_callback;
-    fpsensor_fb_register_client(&fpsensor_dev->notifier);
-#endif
+    //fpsensor_fb_register_client(&fpsensor_dev->notifier);
+//#endif
 
     printk("fpsensor: %s 671 ",__func__);
 #if 1
